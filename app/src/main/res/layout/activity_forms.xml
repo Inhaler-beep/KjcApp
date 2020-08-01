@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormsActivity">
+
+    <include
+        android:id="@+id/forms_toolbar"
+        layout="@layout/app_toolbar"
+        />
+
+    <TextView
+        android:id="@+id/forms_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FORMS AND PDFS"
+        android:textSize="25sp"
+        android:textColor="@color/kattablack"
+        android:layout_below="@+id/forms_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/forms_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forms_heading"/>
+
+    <Button
+        android:id="@+id/form_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forms_heading"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="Button"
+        />
+
+
+</RelativeLayout>

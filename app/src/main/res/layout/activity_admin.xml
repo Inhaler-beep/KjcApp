@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <EditText
+        android:id="@+id/heading_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:hint="Enter topic"
+
+        />
+
+    <EditText
+        android:id="@+id/body_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/heading_input"
+        android:inputType="textMultiLine"
+        android:hint="Enter body"
+
+        />
+
+    <Button
+        android:id="@+id/send_updates_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/body_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Submit"/>
+
+    <TextView
+        android:id="@+id/upload_images_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Image for SlideShow"
+        android:layout_below="@+id/send_updates_button"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="#205868"
+        android:background="@drawable/inputs"
+        android:padding="10dp"/>
+
+        <ImageButton
+            android:id="@+id/select_image_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/upload_images_header"
+            android:layout_margin="20dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/select_image"
+            android:scaleType="centerInside"
+            />
+
+        <TextView
+            android:id="@+id/upload_oneImage_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload one image at a time"
+            android:layout_below="@+id/select_image_button"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/upload_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upload_oneImage_textView"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="Upload"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/inputs"/>
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

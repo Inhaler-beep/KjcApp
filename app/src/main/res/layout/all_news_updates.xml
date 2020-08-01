@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    android:id="@+id/main_linear_layout_of_allupdates"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="13dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="15dp"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#29769F"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/news_heading"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="20dp"
+            android:text="News Heading, this is the main heading click here to see more"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold">
+
+        </TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E6E8E8"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:id="@+id/news_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is the news update body, Here you can see the lastest news and updates. The updates are uploaded regularly on the basis of evnets and department promotions"
+            android:textStyle="bold"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="25dp"
+            />
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <include
+        android:id="@+id/user_click_toolbar"
+        layout="@layout/app_toolbar">
+
+    </include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/user_click_toolbar"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_click_profile_pic"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/profile"/>
+            <TextView
+                android:id="@+id/user_click_full_name"
+                android:layout_below="@+id/user_click_profile_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Full name"
+                android:textSize="20sp"
+                android:textColor="#0AB65D"
+                android:textStyle="bold"
+                android:fontFamily="@font/aladin"
+                android:layout_marginTop="10dp">
+
+            </TextView>
+            <View
+                android:id="@+id/user_click_view_side"
+                android:layout_width="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="1dp"
+                android:layout_below="@+id/user_click_full_name"
+                android:background="#DEDFDF"
+                android:layout_marginTop="2dp"
+                >
+            </View>
+
+            <TextView
+                android:id="@+id/user_click_course"
+                android:layout_below="@+id/user_click_view_side"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Course"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:fontFamily="@font/aladin"
+                android:layout_marginTop="10dp">
+
+            </TextView><TextView
+            android:id="@+id/user_click_section"
+            android:layout_below="@+id/user_click_course"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:text="Section"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:fontFamily="@font/aladin"
+            android:layout_marginTop="2dp">
+
+        </TextView>
+
+
+
+
+
+            <TextView
+                android:id="@+id/user_click_details_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_click_section"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/aladin"
+                android:text="Personal Details"
+                android:textSize="20sp"
+                android:textColor="#A39E9E">
+
+            </TextView>
+            <View
+                android:id="@+id/user_click_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/user_click_details_heading"
+                android:background="#DEDFDF"
+                android:layout_margin="20dp">
+            </View>
+
+
+            <Button
+                android:id="@+id/user_click_send_request_button"
+                android:layout_below="@+id/user_click_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_button"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:text="Send Request"/>
+
+            <Button
+                android:id="@+id/user_click_decline_request_button"
+                android:layout_below="@+id/user_click_send_request_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_button"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:text="Decline Request"/>
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

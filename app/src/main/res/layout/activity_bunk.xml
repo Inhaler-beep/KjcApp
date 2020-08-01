@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".BunkActivity">
+
+    <include
+        android:id="@+id/bunk_toolbar"
+        layout="@layout/app_toolbar">
+
+    </include>
+
+    <ImageView
+        android:id="@+id/bunk_text_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bunk_logo_make"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/bunk_toolbar">
+
+    </ImageView>
+
+
+
+    <EditText
+        android:id="@+id/total_classes_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bunk_text_header"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Total number of lectures"
+        android:textColorHint="#D3A828"
+        android:background="@drawable/post_border"
+
+        android:inputType="number"
+        android:padding="12dp"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/total_absent_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/total_classes_input"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Total number of absents"
+        android:textColorHint="#D3A828"
+        android:background="@drawable/post_border"
+        android:inputType="number"
+        android:padding="12dp"
+        >
+    </EditText>
+
+    <Button
+        android:id="@+id/bunk_calculate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/total_absent_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/inputs"
+        android:backgroundTint="#F8A807"
+        android:padding="10dp"
+        android:fontFamily="@font/aladin"
+        android:text="Calculate"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bunk_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bunk_calculate_button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/aladin"
+        android:text="Percentage: "
+        android:textColor="#1FA310"
+        android:textSize="29sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/total_percentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/bunk_percentage"
+
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/bangers_regular"
+        android:text="%"
+        android:textColor="#A80808"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

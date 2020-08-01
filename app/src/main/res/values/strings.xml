@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">KJC</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="country_prompt">Choose a course</string>
+    <string name="section_prompt">Choose a section</string>
+
+    <string-array name="country_arrays">
+        <item>Course</item>
+        <item>BCA</item>
+        <item>BCA Analytics</item>
+        <item>BSC CSMS</item>
+        <item>BSC PCMS</item>
+        <item>BA JPEng</item>
+        <item>BA EPSc</item>
+        <item>BCom Accountancy</item>
+        <item>BCom ACCA</item>
+    </string-array>
+
+    <string-array name="section_arrays">
+        <item>Section</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>E</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

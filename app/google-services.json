@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "415241573870",
+    "firebase_url": "https://kristu-jayanti-dfa24.firebaseio.com",
+    "project_id": "kristu-jayanti-dfa24",
+    "storage_bucket": "kristu-jayanti-dfa24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:415241573870:android:d41be84618a3d978ca6aff",
+        "android_client_info": {
+          "package_name": "com.example.kjc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "415241573870-3o4lq74tga0soaos4a2pkb3msauprfii.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kjc",
+            "certificate_hash": "b9ae99ef11adc61743e89433cdcf022129df998b"
+          }
+        },
+        {
+          "client_id": "415241573870-18c9eu11ph1blor64a0e5p08nvanfpgb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBhbL3XlejmP-0w0EuZvXpm-HuVUHyJIY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "415241573870-18c9eu11ph1blor64a0e5p08nvanfpgb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

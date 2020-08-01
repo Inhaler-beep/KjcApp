@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <include
+        android:id="@+id/profile_toolbar"
+        layout="@layout/app_toolbar">
+
+    </include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/profile_toolbar"
+        android:layout_height="match_parent">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/my_profile_pic"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:src="@drawable/profile"/>
+                <TextView
+                    android:id="@+id/profile_full_name"
+                    android:layout_below="@+id/my_profile_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Full name"
+                    android:textSize="20sp"
+                    android:textColor="#0AB65D"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/aladin"
+                    android:layout_marginTop="10dp">
+
+                </TextView>
+            <View
+                android:id="@+id/profile_view_side"
+                android:layout_width="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="1dp"
+                android:layout_below="@+id/profile_full_name"
+                android:background="#DEDFDF"
+                android:layout_marginTop="2dp"
+               >
+            </View>
+
+            <TextView
+                android:id="@+id/profile_course"
+                android:layout_below="@+id/profile_view_side"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Course"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:fontFamily="@font/aladin"
+                android:layout_marginTop="10dp">
+
+            </TextView><TextView
+            android:id="@+id/profile_section"
+            android:layout_below="@+id/profile_course"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:text="Section"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:fontFamily="@font/aladin"
+            android:layout_marginTop="2dp">
+
+        </TextView>
+
+
+
+
+
+            <TextView
+                android:id="@+id/personal_details_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_section"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/aladin"
+                android:text="Personal Details"
+                android:textSize="20sp"
+                android:textColor="#A39E9E">
+
+            </TextView>
+            <View
+                android:id="@+id/profile_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/personal_details_heading"
+                android:background="#DEDFDF"
+                android:layout_margin="20dp">
+            </View>
+
+            <LinearLayout
+                android:id="@+id/main_linear_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/profile_view">
+
+
+
+           <LinearLayout
+               android:layout_below="@+id/main_linear_view"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="20dp"
+               android:orientation="horizontal"
+               android:gravity="start">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_email">
+               </ImageView>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   >
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text=" College Email ID"
+                       android:layout_marginLeft="10dp"
+                       android:textSize="13sp"
+                       android:textStyle="bold"
+                       android:fontFamily="@font/aladin"
+                       android:textColor="#6C6969">
+                   </TextView>
+
+                   <TextView
+                       android:id="@+id/college_email_id"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text=" College Email ID"
+                       android:layout_marginLeft="13dp"
+                       android:textSize="17sp"
+                       android:fontFamily="@font/aladin"
+                       android:textColor="#0AB65D">
+                   </TextView>
+
+               </LinearLayout>
+           </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_below="@+id/main_linear_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="horizontal"
+                    android:gravity="start">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_mobile">
+                    </ImageView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Mobile Number"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/aladin"
+                            android:textColor="#6C6969">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/profile_mobile_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mobile Number"
+                            android:layout_marginLeft="13dp"
+                            android:textSize="17sp"
+                            android:fontFamily="@font/aladin"
+                            android:textColor="#0AB65D">
+                        </TextView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_below="@+id/main_linear_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="horizontal"
+                    android:gravity="start">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_dob">
+                    </ImageView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date of Birth"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/aladin"
+                            android:textColor="#6C6969">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/profile_dob_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date of Birth"
+                            android:layout_marginLeft="13dp"
+                            android:textSize="17sp"
+                            android:fontFamily="@font/aladin"
+                            android:textColor="#0AB65D">
+                        </TextView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_below="@+id/main_linear_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="horizontal"
+                    android:gravity="start">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_name">
+                    </ImageView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gender"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/aladin"
+                            android:textColor="#6C6969">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/profile_gender_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gender"
+                            android:layout_marginLeft="13dp"
+                            android:textSize="17sp"
+                            android:fontFamily="@font/aladin"
+                            android:textColor="#0AB65D">
+                        </TextView>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:id="@+id/profile_view_thazhe"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DEDFDF"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+                </View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="9sp"
+                    android:text="Coded and Developed by Team Django"
+                    android:layout_gravity="center_horizontal">
+                </TextView>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

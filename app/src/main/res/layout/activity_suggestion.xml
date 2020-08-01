@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuggestionActivity">
+
+    <include
+        android:id="@+id/suggestion_toolbar"
+        layout="@layout/app_toolbar">
+
+    </include>
+
+
+
+
+       <LinearLayout
+        android:id="@+id/suggestion_linear_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5493C3"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_below="@+id/suggestion_toolbar">
+
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/email_suggestion">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Suggestion Inbox"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:fontFamily="@font/aladin"
+            android:textSize="35sp"
+            android:textColor="#FFFFFF">
+
+
+        </TextView>
+       </LinearLayout>
+
+        <LinearLayout
+           android:layout_below="@+id/suggestion_linear_first"
+           android:layout_marginTop="20dp"
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/suggestion_input"
+                android:layout_width="match_parent"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:layout_height="190dp"
+                android:layout_margin="30dp"
+                android:background="@drawable/bg_edit_background">
+            </EditText>
+
+           <Button
+               android:id="@+id/send_suggestion_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+               android:background="@drawable/inputs"
+               android:textColor="#ffffff"
+               android:textStyle="bold"
+               android:fontFamily="@font/aladin"
+               android:padding="10dp"
+               android:backgroundTint="#5493C3"
+            android:layout_gravity="center"
+            android:text="Send Sugegstion">
+
+
+           </Button>
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>
